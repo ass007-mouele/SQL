@@ -1,0 +1,9 @@
+SELECT * FROM wizard
+WHERE birthday BETWEEN '1975-01-01' AND '1985-12-31' AND is_muggle=FALSE;
+SELECT * FROM wizard
+WHERE firstname LIKE 'H%';
+SELECT * FROM wizard
+WHERE lastname LIKE 'potter' ORDER BY lastname ASC ;
+SELECT firstname, lastname, birthday  FROM wizard
+WHERE is_muggle=TRUE
+ORDER BY birthday ASC LIMIT 1;
