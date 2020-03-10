@@ -1,0 +1,11 @@
+UPDATE school SET country = 'Sweden' WHERE name  = 'Durmstrang Institute';
+UPDATE school SET capacity = '700' WHERE name  = 'Mahoutokoro School of Magic';
+DELETE FROM school where name LIKE '%Magic%';
+SELECT * FROM school;
+
+
+'3','Castelobruxo ','380','Brazil'
+'4','Durmstrang Institute ','570','Sweden'
+'5','Hogwarts School of Witchcraft and Wizardry','450','United Kingdom'
+'6','Ilvermorny School of Witchcraft and Wizardry','300','USA'
+'7','Koldovstoretz','125','Russia'
