@@ -93,37 +93,6 @@ mysql> SELECT  firstname,lastname,role,name
 +-------------+-----------------+--------+------------+
 84 rows in set (0,01 sec)
 
-
-mysql> SELECT firstname,lastname ,role
-    -> FROM wizard
-    -> LEFT JOIN player ON wizard.id = player.wizard_id
-    -> LEFT JOIN team ON player.wizard_id = team.id 
-    -> WHERE role= 'seeker'
-    -> ORDER BY lastname ASC, firstname ASC;
-+-----------+------------+--------+
-| firstname | lastname   | role   |
-+-----------+------------+--------+
-| Cuthbert  | Binns      | seeker |
-| Michael   | Corner     | seeker |
-| Colin     | Creevey    | seeker |
-| Gregory   | Goyle      | seeker |
-| Godric    | Gryffindor | seeker |
-| Helga     | Hufflepuff | seeker |
-| Rabastan  | Lestrange  | seeker |
-| Narcissa  | Malfoy     | seeker |
-| Rowena    | Ravenclaw  | seeker |
-| Salazar   | Slytherin  | seeker |
-| Sybill    | Trelawney  | seeker |
-| Dolores   | Umbridge   | seeker |
-| Romilda   | Vane       | seeker |
-| Fred      | Weasley    | seeker |
-| Ronald    | Weasley    | seeker |
-| William   | Weasley    | seeker |
-+-----------+------------+--------+
-
-#Retourne la liste de tous les sorciers qui ne pratiquent pas le quidditch.
-
-
 mysql> SELECT  firstname,lastname,role
     -> FROM player
     -> INNER JOIN wizard ON wizard.id = player.wizard_id
@@ -151,6 +120,7 @@ mysql> SELECT  firstname,lastname,role
 +-----------+------------+--------+
 16 rows in set (0,00 sec)
 
+#Retourne la liste de tous les sorciers qui ne pratiquent pas le quidditch.
 
 mysql> SELECT lastname,firstname 
     -> FROM wizard
